@@ -1,5 +1,4 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LandingCarousel from '../../components/carousel/LandingCarousel';
 import ProductCarousel from '../../components/carousel/ProductCarousel';
 import RecomendationCarousel from '../../components/carousel/RecomendationCarousel';
