@@ -1,8 +1,9 @@
+import routes from '../constants/route';
+
 import Home from '../pages/Home';
 import Login from '../pages/Login';
-
-import routes from '../constants/route';
 import Product from '../pages/Product';
+import ProductDetail from '../pages/ProductDetal';
 
 export default [
   {
@@ -22,6 +23,13 @@ export default [
   {
     path: routes.PRODUCT,
     component: Product,
+    exact: true,
+    restricted: false,
+    isPrivate: false,
+  },
+  {
+    path: routes.PRODUCT_DETAIL,
+    component: ProductDetail,
     exact: true,
     restricted: false,
     isPrivate: false,
