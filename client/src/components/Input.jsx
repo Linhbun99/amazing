@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 const Input = (props) => {
+    const { className, left, right, placeholder } = props;
     return (
-        <div className='flex w-180'>
+        <div className={`${className + ' ' + 'flex'}`}>
             {props.left}
-            <input type="text" className='text-black grow p-2' />
+            <input
+                type="text"
+                className='text-black grow p-2'
+                placeholder={placeholder || ''}
+            />
             {props.right}
         </div>
     )

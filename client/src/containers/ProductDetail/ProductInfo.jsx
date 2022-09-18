@@ -124,7 +124,6 @@ const ProductInfo = () => {
                 </div>
 
             </div>
-            <hr />
         </div>
     )
 }

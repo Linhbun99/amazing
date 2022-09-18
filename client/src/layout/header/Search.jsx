@@ -14,6 +14,7 @@ const options = [
 const Search = () => {
     return (
         <Input
+            className='w-180'
             right={<SearchIcon />}
             left={<DropSelect />}
         />

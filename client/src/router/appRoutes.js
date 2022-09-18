@@ -1,4 +1,5 @@
 import routes from '../constants/route';
+import Cart from '../pages/Cart';
 
 import Home from '../pages/Home';
 import Login from '../pages/Login';
@@ -30,6 +31,20 @@ export default [
   {
     path: routes.PRODUCT_DETAIL,
     component: ProductDetail,
+    exact: true,
+    restricted: false,
+    isPrivate: false,
+  },
+  {
+    path: routes.PRODUCT_DETAIL,
+    component: ProductDetail,
+    exact: true,
+    restricted: false,
+    isPrivate: false,
+  },
+  {
+    path: routes.CART,
+    component: Cart,
     exact: true,
     restricted: false,
     isPrivate: false,
